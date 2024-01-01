@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form action="signup_process.php" method="post">
+                <label for="chk" aria-hidden="true">Sign Up</label>
+                <input type="text" placeholder="User name" name="txt" required="">
+                <input type="email" placeholder="Email" name="email" required="">
+                <input type="password" placeholder="Password" name="pswd" required="">
+                <input type="password" placeholder="Confirm Password" name="confirm_pswd" required="">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="login_process.php" method="post">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" placeholder="Email or User name" name="login_id" required="">
+                <input type="password" placeholder="Password" name="login_pswd" required="">
+                <button type="submit">Login</button>
+                <p>Forgot your password? <a href="forgot_password.php">Reset it</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
